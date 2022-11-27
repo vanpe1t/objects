@@ -2,6 +2,13 @@ public class Book {
     private final String name;
     private final Author author;
     private int yearOfPublication;
+    @Override
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", author=" + author +
+                ", yearOfPublication=" + yearOfPublication +
+                '}';
+    }
 
     public Book(String name, Author author){
         this.name = name;
